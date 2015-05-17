@@ -38,7 +38,8 @@ module.exports = function (grunt) {
 
       var result = "namespace " + namespace + "\r\n";
       result += "{\r\n";
-      result += "    using System;\r\n\r\n";
+      result += "    using System;\r\n";
+      result += "    using System.Reflection;\r\n\r\n";
       result += "    internal class " + className + "\r\n";
       result += "    {\r\n\r\n";
       result += "        private static System.Resources.ResourceManager resourceMan;\r\n";
@@ -61,7 +62,7 @@ module.exports = function (grunt) {
         if (pairs.hasOwnProperty(name)) {
           result += "        internal static string " + name + "\r\n";
           result += "        {\r\n";
-          result += "            return ResourceManager.GetString(\"" + name + "\", Culture);\r\n"; 
+          result += "            get { return ResourceManager.GetString(\"" + name + "\", Culture); }\r\n"; 
           result += "        }\r\n\r\n";           
         }        
       }

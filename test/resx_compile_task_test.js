@@ -32,7 +32,7 @@ exports.resx_compile_task = {
 
     var actual = grunt.file.read('tmp/MyResources.cs');
     var expected = grunt.file.read('test/expected/MyResources.cs');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+    test.equal(actual, expected, 'The output generated during the test is not correct!');
 
     test.done();
   },

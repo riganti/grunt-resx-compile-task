@@ -1,6 +1,7 @@
 namespace MyNamespace
 {
     using System;
+    using System.Reflection;
 
     internal class MyResources
     {
@@ -25,32 +26,32 @@ namespace MyNamespace
 
         internal static string UnexpectedEndOfInput
         {
-            return ResourceManager.GetString("UnexpectedEndOfInput", Culture);
+            get { return ResourceManager.GetString("UnexpectedEndOfInput", Culture); }
         }
 
         internal static string Binding_UnsupportedOperator
         {
-            return ResourceManager.GetString("Binding_UnsupportedOperator", Culture);
+            get { return ResourceManager.GetString("Binding_UnsupportedOperator", Culture); }
         }
 
         internal static string Binding_UnsupportedExpression
         {
-            return ResourceManager.GetString("Binding_UnsupportedExpression", Culture);
+            get { return ResourceManager.GetString("Binding_UnsupportedExpression", Culture); }
         }
 
         internal static string Binding_UnsupportedExpressionInDataContext
         {
-            return ResourceManager.GetString("Binding_UnsupportedExpressionInDataContext", Culture);
+            get { return ResourceManager.GetString("Binding_UnsupportedExpressionInDataContext", Culture); }
         }
 
         internal static string ControlCollection_ControlAlreadyHasParent
         {
-            return ResourceManager.GetString("ControlCollection_ControlAlreadyHasParent", Culture);
+            get { return ResourceManager.GetString("ControlCollection_ControlAlreadyHasParent", Culture); }
         }
 
         internal static string HtmlWriter_CannotCloseTagBecauseNoTagIsOpen
         {
-            return ResourceManager.GetString("HtmlWriter_CannotCloseTagBecauseNoTagIsOpen", Culture);
+            get { return ResourceManager.GetString("HtmlWriter_CannotCloseTagBecauseNoTagIsOpen", Culture); }
         }
 
     }
