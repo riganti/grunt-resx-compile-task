@@ -1,0 +1,44 @@
+{
+  "name": "grunt-resx-compile-task",
+  "description": "Grunt task that generates C# class from a RESX file",
+  "version": "0.1.0",
+  "homepage": "https://github.com/riganti/grunt-resx-compile-task",
+  "author": {
+    "name": "Tomáš Herceg",
+    "email": "herceg@vbnet.cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/riganti/grunt-resx-compile-task.git"
+  },
+  "bugs": {
+    "url": "https://github.com/riganti/grunt-resx-compile-task/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/riganti/grunt-resx-compile-task/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "dependencies": {
+    "xmldoc": "^0.3.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
