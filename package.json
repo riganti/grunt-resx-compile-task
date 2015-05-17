@@ -1,7 +1,7 @@
 {
   "name": "grunt-resx-compile-task",
   "description": "Grunt task that generates C# class from a RESX file",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/riganti/grunt-resx-compile-task",
   "author": {
     "name": "Tomáš Herceg",
